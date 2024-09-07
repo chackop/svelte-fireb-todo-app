@@ -1,6 +1,14 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+	import { onMount } from 'svelte';
+	import { firebaseAuth } from '$lib/firebase/firebase.admin';
+
+	onMount(() => {
+		firebaseAuth.onAuthStateChanged(async (user) => {
+			console.log('user-', user);
+		});
+	});
 </script>
 
 <div class="app">
