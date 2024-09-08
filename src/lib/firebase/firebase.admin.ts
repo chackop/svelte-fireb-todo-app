@@ -1,6 +1,7 @@
 // lib/firebase/firebase.admin.ts
 import { initializeApp, getApps, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
+import {} from 'firebase/firestore';
 
 /**
  * Your firebase client SDK config goes here
